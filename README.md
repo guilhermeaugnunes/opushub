@@ -12,6 +12,7 @@ API REST desenvolvida em **C# / ASP.NET Core** com **Entity Framework Core** e b
 - **Documentação de API:** Swagger / OpenAPI (Swashbuckle)
 - **Integração:** CORS habilitado para consumo por Single Page Applications (React / TypeScript)
 - **Controle de Versão:** Git / GitHub Flow
+- **Front-end** O projeto possui interface gráfica em React + TypeScript (Vite)
 
 ---
 
@@ -58,6 +59,13 @@ API REST desenvolvida em **C# / ASP.NET Core** com **Entity Framework Core** e b
 
 5. **Acessar a documentação interativa da API:**
 Abra o navegador e acesse: `https://localhost:5244/swagger` (ou a porta informada no terminal).
+
+6. **Acessar o Front-end do projeto:** Entre no diretório opushub-ui, abra o terminal e digite:
+   ```bash
+      cd opushub-ui
+      npm install
+      npm run dev
+   ```
 
 ---
 
