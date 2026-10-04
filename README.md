@@ -4,7 +4,7 @@ API REST desenvolvida em **C# / ASP.NET Core** com **Entity Framework Core** e b
 
 ---
 
-## 🛠️ Tecnologias e Padrões Utilizados
+## Tecnologias e Padrões Utilizados
 
 - **Linguagem & Framework:** C# (.NET 10 / ASP.NET Core Web API)
 - **Acesso a Dados & ORM:** Entity Framework Core (Code-First Migrations, Fluent API)
@@ -15,7 +15,7 @@ API REST desenvolvida em **C# / ASP.NET Core** com **Entity Framework Core** e b
 
 ---
 
-## 📐 Decisões Arquiteturais e de Modelagem
+## Decisões Arquiteturais e de Modelagem
 
 1. **Mapeamento Declarativo com Fluent API:**  
    Em vez de poluir as entidades de domínio com atributos de validação de dados (`Data Annotations`), o mapeamento relacional foi encapsulado no `OnModelCreating` do `AppDbContext`. Isso garante separação de responsabilidades e controle estrito sobre tipos de colunas, restrições `NOT NULL` e limites de caracteres no banco.
@@ -26,7 +26,7 @@ API REST desenvolvida em **C# / ASP.NET Core** com **Entity Framework Core** e b
 
 ---
 
-## 🚀 Como Executar o Projeto Localmente
+## Como Executar o Projeto Localmente
 
 ### Pré-requisitos
 - [.NET SDK](https://dotnet.microsoft.com/) instalado
@@ -59,10 +59,13 @@ API REST desenvolvida em **C# / ASP.NET Core** com **Entity Framework Core** e b
 5. **Acessar a documentação interativa da API:**
 Abra o navegador e acesse: `https://localhost:5244/swagger` (ou a porta informada no terminal).
 
+---
+
 **Endpoints disponíveis incluem:**
-Método | Rota | Descrição
-GET | /api/musicas | Listar todas as músicas (suporta filtros ?genero=&tom=)
-GET | /api/musicas/{id} | Obter detalhes de uma música específica
-POST | /api/musicas | Cadastrar uma nova música com cifra e metadados
-PUT | /api/musicas/{id} | Atualizar os dados de uma música existente
-DELETE | /api/musicas/{id} | Excluir uma música do acervo
+| Método | Rota | Descrição |
+| :--- | :--- | :--- |
+| `GET` | `/api/musicas` | Lista todas as músicas (suporta filtros `?genero=` e `?tom=`) |
+| `GET` | `/api/musicas/{id}` | Obtém os detalhes de uma música específica |
+| `POST` | `/api/musicas` | Cadastra uma nova música com cifra e metadados |
+| `PUT` | `/api/musicas/{id}` | Atualiza os dados de uma música existente |
+| `DELETE` | `/api/musicas/{id}` | Remove uma música do acervo |
